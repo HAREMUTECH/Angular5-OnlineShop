@@ -1,0 +1,13 @@
+<div class="row">
+  <div *ngFor="let p of product$ | async" class="col-md-4">
+    <div class="card" style="width: 15rem;">
+      <img class="card-img-top" src="{{p.imageUrl}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{p.title}}</h5>
+        <p class="card-text">{{p.price | currency:'NG':true}}</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
